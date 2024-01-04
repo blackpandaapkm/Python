@@ -1,0 +1,28 @@
+enviroment setup
+create a folder 
+open cmd at this floder
+to go vscode write "code ."
+now open terminal at vs code
+make sure you at git bash
+write "python -m venv myenv "
+write ". myenv/Scripts/activate"
+write "pip install django"
+write "python.exe -m pip install --upgrade pip" (if you need upgrade)
+
+To create project 
+write "django-admin startproject project_name"
+write "cd project_name"
+write "python manage.py startapp myapp"
+goto settings.py >> find "INSTALLED_APPS" list >> add 'myapp',
+goto urls.py >> find "from django.urls import path" replace "from django.urls import path,include"
+                find urlpatterns >> add "path('',include("myapp.urls"))"
+goto myapp create a python file name "urls.py"
+write on myapp/urls.py > 
+from django.urls import path
+urlpatterns=[
+
+]
+
+To run server 
+write "python manage.py runserver"
+they give an urls copy it and open it on browser . 
